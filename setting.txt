@@ -1,0 +1,46 @@
+# Settings for video capture, backend and denoising filters
+width=1920
+height=1080
+fps=60
+fourcc=MJPG
+
+# Capture backend options: CAP_ANY, CAP_DSHOW, CAP_V4L2, CAP_MSMF
+capture_backend=CAP_DSHOW
+
+# Denoising algorithm options:
+# Available options: none, bilateral, fastnlmeans, fastnlmeanscolored, gaussian, median, edgepreserving, detailenhance
+# It is recommend to use bilateral/gaussian, other filter require too much computation resource
+denoising_algo=bilateral
+
+# Bilateral filter parameters
+bilateral_d=3
+bilateral_sigmaColor=75
+bilateral_sigmaSpace=100
+
+# fastNlMeansDenoising parameters (for grayscale images)
+fastNlMeans_h=10
+fastNlMeans_templateWindowSize=7
+fastNlMeans_searchWindowSize=21
+
+# fastNlMeansDenoisingColored parameters (for colored images)
+fastNlMeansColored_h=10
+fastNlMeansColored_hColor=10
+fastNlMeansColored_templateWindowSize=3
+fastNlMeansColored_searchWindowSize=3
+
+# Gaussian blur parameters
+gaussian_kernel_width=3
+gaussian_kernel_height=3
+gaussian_sigma=1.0
+
+# Median filter parameter
+median_kernel_size=5
+
+# Edge preserving filter parameters
+edgepreserving_flags=1
+edgepreserving_sigma_s=3
+edgepreserving_sigma_r=0.15
+
+# Detail enhance filter parameters
+detailenhance_sigma_s=0.1
+detailenhance_sigma_r=0.15

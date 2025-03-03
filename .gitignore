@@ -1,0 +1,16 @@
+# Exclude build and dist folders
+build/
+dist/
+
+# Exclude PyInstaller spec files
+*.spec
+
+# Exclude Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Exclude virtual environment folders
+venv/
+env/
