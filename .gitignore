@@ -4,6 +4,7 @@ dist/
 
 # Exclude PyInstaller spec files
 *.spec
+start.bat
 
 # Exclude Python cache files
 __pycache__/
